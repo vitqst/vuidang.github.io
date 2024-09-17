@@ -5,47 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The History of the Internet</title>
     <style>
+        /* Simplified Bootstrap-like styles */
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.8;
+            line-height: 1.5;
+            margin: 0;
             padding: 20px;
+            width: 984px; /* 1024px - 40px padding */
+            font-size: 16px;
+        }
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .col {
+            flex-basis: 0;
+            flex-grow: 1;
             max-width: 100%;
-            margin: 0 auto;
-            font-size: 20px; /* Increased base font size */
+            padding-right: 15px;
+            padding-left: 15px;
         }
         h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 24px;
+            margin-bottom: 16px;
         }
         h2 {
-            font-size: 28px;
-            margin-top: 30px;
-            margin-bottom: 20px;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 16px;
         }
         p, ul, ol {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-        .navigation {
-            margin-top: 30px;
-            margin-bottom: 40px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .nav-button {
-            padding: 15px 25px;
-            font-size: 22px;
-            text-decoration: none;
-            color: #000;
-            border: 2px solid #000;
-            background-color: #f0f0f0;
+        .btn {
             display: inline-block;
-            margin: 10px 0;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            padding: 8px 12px;
+            font-size: 16px;
+            line-height: 1.5;
+            border: 1px solid #007bff;
+            color: #007bff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        .btn:hover {
+            color: #fff;
+            background-color: #007bff;
+        }
+        .mt-3 {
+            margin-top: 16px;
+        }
+        .mb-3 {
+            margin-bottom: 16px;
         }
     </style>
 </head>
 <body>
-    <div id="content">
+    <div class="container">
         <h1>The History of the Internet</h1>
+        
         <h2>Table of Contents</h2>
         <ol>
             <li><a href="#section1">The Birth of the Internet</a></li>
@@ -59,9 +92,13 @@
             <p>ARPANET was designed to be a decentralized network that could withstand partial outages, such as those that might occur during a nuclear attack, without losing the ability to function. This revolutionary concept of a distributed network laid the groundwork for the robust and resilient internet we use today.</p>
             <p>The first ARPANET connection was established on October 29, 1969, between computers at UCLA and Stanford Research Institute. By the end of 1969, four computers were connected to the ARPANET, and the network continued to grow steadily throughout the 1970s.</p>
             <p>One of the key innovations that emerged during this period was packet switching, a method of data transmission that breaks information into smaller packets before sending it across the network. This technique, developed by Paul Baran, Donald Davies, and Leonard Kleinrock, proved to be more efficient and reliable than traditional circuit switching used in telephone networks.</p>
-            <div class="navigation">
-                <a href="#" class="nav-button">Previous: Table of Contents</a>
-                <a href="#section2" class="nav-button">Next: Development of Protocols</a>
+            <div class="row mt-3 mb-3">
+                <div class="col">
+                    <a href="#" class="btn">Previous: Table of Contents</a>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <a href="#section2" class="btn">Next: Development of Protocols</a>
+                </div>
             </div>
         </div>
 
@@ -76,9 +113,13 @@
                 <li>URLs (Uniform Resource Locators) for addressing web pages</li>
             </ul>
             <p>These innovations made the internet accessible to a much wider audience and set the stage for the explosive growth that was to come in the following decades.</p>
-            <div class="navigation">
-                <a href="#section1" class="nav-button">Previous: Birth of the Internet</a>
-                <a href="#section3" class="nav-button">Next: Modern Internet Era</a>
+            <div class="row mt-3 mb-3">
+                <div class="col">
+                    <a href="#section1" class="btn">Previous: Birth of the Internet</a>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <a href="#section3" class="btn">Next: Modern Internet Era</a>
+                </div>
             </div>
         </div>
 
@@ -89,10 +130,13 @@
             <p>The dot-com boom of the late 1990s saw massive investments in internet-based companies, leading to rapid growth and innovation. Although this bubble eventually burst in 2000-2001, it laid the groundwork for the next phase of internet development.</p>
             <p>The 2000s and 2010s brought about the rise of social media, with platforms like MySpace, Facebook, Twitter, and Instagram revolutionizing how people connect and share information online. The increasing availability of broadband internet and the advent of smartphones made the internet an integral part of daily life for billions of people worldwide.</p>
             <p>Today, the internet continues to evolve with emerging technologies such as cloud computing, the Internet of Things (IoT), and artificial intelligence shaping its future. As we move forward, issues like data privacy, cybersecurity, and equitable access to the internet remain important challenges to address.</p>
-            <p>From its humble beginnings as a Cold War-era research project to the global network that connects billions of devices and people today, the internet has truly transformed the world in ways that its early pioneers could scarcely have imagined.</p>
-            <div class="navigation">
-                <a href="#section2" class="nav-button">Previous: Development of Protocols</a>
-                <a href="#" class="nav-button">Next: Table of Contents</a>
+            <div class="row mt-3 mb-3">
+                <div class="col">
+                    <a href="#section2" class="btn">Previous: Development of Protocols</a>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <a href="#" class="btn">Next: Table of Contents</a>
+                </div>
             </div>
         </div>
     </div>
